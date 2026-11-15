@@ -1,0 +1,108 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-slate-950 text-slate-400 border-t border-slate-800 pt-16 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+      
+      <!-- Columna 1: Identidad y taller -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-md">
+            <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xl font-black text-white tracking-tight">CASTRO<span class="text-amber-500">.</span></span>
+            <p class="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">Mantenimiento Industrial</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400">
+          <strong>Mantenimiento Industrial Castro</strong>. Taller especializado en mantenimiento electromecánico, maquinado en torno y fresadora, pailería y predictivo con sede en Iztapalapa para toda la Ciudad de México y zona conurbada.
+        </p>
+        <div class="pt-2">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-amber-400 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Taller Operativo en Iztapalapa • Atención 24/7
+          </span>
+        </div>
+      </div>
+
+      <!-- Columna 2: Servicios Principales -->
+      <div class="space-y-3">
+        <h3 class="text-white font-bold text-sm uppercase tracking-wider">Servicios Técnicos</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/#servicios" class="hover:text-amber-400 transition-colors">Mantenimiento Electromecánico</a></li>
+          <li><a href="/#servicios" class="hover:text-amber-400 transition-colors">Maquinado en Torno y Fresadora</a></li>
+          <li><a href="/#servicios" class="hover:text-amber-400 transition-colors">Reparación y Rebobinado de Motores</a></li>
+          <li><a href="/#servicios" class="hover:text-amber-400 transition-colors">Alineación Láser y Balanceo Dinámico</a></li>
+          <li><a href="/#servicios" class="hover:text-amber-400 transition-colors">Pailería y Soldadura Calificada</a></li>
+          <li><a href="/#servicios" class="hover:text-amber-400 transition-colors">Pólizas y Paros Programados</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Cobertura en CDMX y EdoMex -->
+      <div class="space-y-3">
+        <h3 class="text-white font-bold text-sm uppercase tracking-wider">Zonas de Atención Rápida</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Ubicación céntrica en Iztapalapa con llegada ágil a los polos industriales:
+        </p>
+        <ul class="grid grid-cols-2 gap-x-2 gap-y-1.5 text-xs text-slate-300">
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Iztapalapa / CEDA</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Iztacalco / Granjas</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Tláhuac / Tulyehualco</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Coyoacán / Tlalpan</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Benito Juárez / Centro</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Vallejo / Azcapotzalco</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Tlalnepantla</li>
+          <li class="flex items-center gap-1.5"><span class="text-amber-400">›</span> Toluca / Lerma</li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto directo taller -->
+      <div class="space-y-3">
+        <h3 class="text-white font-bold text-sm uppercase tracking-wider">Taller Central Iztapalapa</h3>
+        <ul class="space-y-2.5 text-xs text-slate-300">
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <span>Calle San Ignacio #38, Barrio San Ignacio, Alcaldía Iztapalapa, C.P. 09000, Ciudad de México, CDMX.</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <a href="tel:+525584236956" class="hover:text-amber-400 font-semibold text-white">(55) 8423-6956</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.316 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.818-.981z"/>
+            </svg>
+            <a href="https://wa.me/525584236956?text=Hola%20Mantenimiento%20Industrial%20Castro,%20solicito%20atenci%C3%B3n%20para%20un%20servicio%20en%20CDMX" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 text-emerald-400 font-medium">WhatsApp: 55 8423 6956</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <a href="mailto:mantenimientoindustrialcastro@gmail.com" class="hover:text-amber-400">mantenimientoindustrialcastro@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Barra inferior copyright y certificaciones -->
+    <div class="mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <p>© {currentYear} Mantenimiento Industrial Castro. Todos los derechos reservados. San Ignacio 38, Iztapalapa, Ciudad de México.</p>
+      <div class="flex items-center gap-6">
+        <span class="text-slate-400">Normas STPS • NOM-004 • NOM-029</span>
+        <a href="/contacto" class="hover:text-amber-400 transition-colors">Aviso de Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>

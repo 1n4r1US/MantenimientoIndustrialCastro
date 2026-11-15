@@ -1,0 +1,374 @@
+---
+import Layout from "../Layouts/Layout.astro";
+---
+
+<Layout
+  title="Contacto y Ubicación en Iztapalapa | Mantenimiento Industrial Castro"
+  description="Contacta a Mantenimiento Industrial Castro en Calle San Ignacio 38, Iztapalapa, CDMX. Teléfono 55 8423 6956, correo mantenimientoindustrialcastro@gmail.com. Cotizaciones inmediatas."
+  currentPage="contacto"
+>
+  <!-- HEADER SECCIÓN CONTACTO -->
+  <section class="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-16 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <div class="max-w-3xl space-y-4">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
+          Mantenimiento Industrial Castro • Iztapalapa, CDMX
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+          Contacto y Ubicación de <span class="text-amber-500">Nuestro Taller</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          Estamos a tu servicio en <strong>Calle San Ignacio 38, Iztapalapa</strong>. Llámanos al <strong class="text-white">(55) 8423-6956</strong>, escríbenos por WhatsApp o déjanos un mensaje para atender tu requerimiento técnico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL: FORMULARIO Y DATOS DE UBICACIÓN -->
+  <section class="py-16 bg-slate-900 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- COLUMNA IZQUIERDA: FORMULARIO ACCESIBLE (Modern Web Guidance) -->
+        <div class="lg:col-span-7 bg-slate-950 rounded-2xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
+          <div class="space-y-2 mb-8">
+            <h2 id="form-heading" class="text-2xl font-extrabold text-white">
+              Solicitar Cotización o Asistencia Técnica
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-400">
+              Completa los datos de tu máquina o pieza. Todos los campos con (<span class="text-amber-400 font-bold">*</span>) son requeridos.
+            </p>
+          </div>
+
+          <!-- Mensaje de éxito dinámico -->
+          <div id="form-feedback" class="hidden p-5 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-200 text-sm mb-6 space-y-2" role="alert" aria-live="polite">
+            <div class="flex items-center gap-2 font-bold text-emerald-400 text-base">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              ¡Mensaje Recibido!
+            </div>
+            <p class="text-xs text-emerald-300 leading-relaxed">
+              Gracias por contactar a <strong>Mantenimiento Industrial Castro</strong>. Nos comunicaremos contigo al teléfono o correo proporcionado a la brevedad.
+            </p>
+          </div>
+
+          <form id="industrial-contact-form" action="#" method="POST" aria-labelledby="form-heading" class="space-y-6">
+            
+            <!-- Nombre y Empresa -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="space-y-1.5">
+                <label for="full-name" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                  Nombre Completo <span class="text-amber-400" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  autocomplete="name"
+                  required
+                  placeholder="Ej. Ing. Carlos Mendoza"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-amber-500 transition-colors"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="company-name" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                  Empresa o Taller <span class="text-amber-400" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="company-name"
+                  name="company-name"
+                  autocomplete="organization"
+                  required
+                  placeholder="Ej. Industrias Mecánicas S.A. / Particular"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-amber-500 transition-colors"
+                />
+              </div>
+            </div>
+
+            <!-- Teléfono y Correo Electrónico -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="space-y-1.5">
+                <label for="phone-number" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                  Teléfono / Celular <span class="text-amber-400" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                  placeholder="Ej. 55 8423 6956"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-amber-500 transition-colors"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="email-address" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                  Correo Electrónico <span class="text-amber-400" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email-address"
+                  name="email-address"
+                  autocomplete="email"
+                  required
+                  autocorrect="off"
+                  autocapitalize="none"
+                  spellcheck="false"
+                  placeholder="ejemplo@correo.com"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-amber-500 transition-colors"
+                />
+              </div>
+            </div>
+
+            <!-- Tipo de Servicio y Zona en CDMX -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="space-y-1.5">
+                <label for="service-type" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                  Servicio Requerido <span class="text-amber-400" aria-hidden="true">*</span>
+                </label>
+                <select
+                  id="service-type"
+                  name="service-type"
+                  required
+                  class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:border-amber-500 transition-colors"
+                >
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="torno-fresadora">Maquinado en Torno / Fresadora</option>
+                  <option value="electromecanico">Mantenimiento Electromecánico</option>
+                  <option value="paileria-soldadura">Pailería y Soldadura</option>
+                  <option value="motores-electricos">Reparación de Motores / Bombas</option>
+                  <option value="predictivo-vibraciones">Mantenimiento Predictivo</option>
+                  <option value="emergencia">Emergencia / Paro de Máquina</option>
+                  <option value="otro">Otro Requerimiento</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="plant-location" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                  Alcaldía / Municipio <span class="text-amber-400" aria-hidden="true">*</span>
+                </label>
+                <select
+                  id="plant-location"
+                  name="plant-location"
+                  required
+                  class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:border-amber-500 transition-colors"
+                >
+                  <option value="" disabled selected>Tu ubicación</option>
+                  <option value="iztapalapa">Iztapalapa (CDMX)</option>
+                  <option value="iztacalco">Iztacalco (CDMX)</option>
+                  <option value="tlahuac">Tláhuac (CDMX)</option>
+                  <option value="coyoacan">Coyoacán (CDMX)</option>
+                  <option value="benito-juarez">Benito Juárez (CDMX)</option>
+                  <option value="cuauhtemoc">Cuauhtémoc / Centro (CDMX)</option>
+                  <option value="azcapotzalco">Azcapotzalco / Vallejo (CDMX)</option>
+                  <option value="otra-cdmx">Otra Alcaldía de CDMX</option>
+                  <option value="edomex">Estado de México (Conurbado)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Urgencia -->
+            <fieldset class="space-y-2 pt-1">
+              <legend class="block text-xs font-bold text-slate-200 uppercase tracking-wider mb-2">
+                Prioridad del Trabajo
+              </legend>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 cursor-pointer">
+                  <input type="radio" name="priority" value="normal" checked class="text-amber-500 focus:ring-amber-500" />
+                  <span class="text-xs font-medium text-slate-300">Normal (Cotización)</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 cursor-pointer">
+                  <input type="radio" name="priority" value="urgente" class="text-amber-500 focus:ring-amber-500" />
+                  <span class="text-xs font-medium text-amber-400">Urgente (&lt; 24h)</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-red-950/40 border border-red-800/60 hover:border-red-600 cursor-pointer">
+                  <input type="radio" name="priority" value="paro-activo" class="text-red-500 focus:ring-red-500" />
+                  <span class="text-xs font-bold text-red-400">Paro Activo</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Descripción de la Falla o Pieza -->
+            <div class="space-y-1.5">
+              <label for="problem-description" class="block text-xs font-bold text-slate-200 uppercase tracking-wider">
+                Detalles de la Máquina, Pieza o Falla <span class="text-amber-400" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="problem-description"
+                name="problem-description"
+                rows="4"
+                required
+                placeholder="Por favor indícanos dimensiones aproximadas, tipo de material (acero, bronce, nylamid), síntomas de la máquina o cualquier detalle relevante..."
+                class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-amber-500 transition-colors"
+              ></textarea>
+            </div>
+
+            <!-- Botón de Envío -->
+            <div>
+              <button
+                type="submit"
+                id="submit-btn"
+                class="w-full py-4 px-6 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-base shadow-lg shadow-amber-500/20 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2"
+              >
+                <span>Enviar Solicitud a Taller Castro</span>
+                <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- COLUMNA DERECHA: DATOS DE UBICACIÓN REAL EN IZTAPALAPA -->
+        <div class="lg:col-span-5 space-y-8">
+          
+          <!-- Tarjeta de Dirección Taller Matriz -->
+          <div class="bg-slate-950 rounded-2xl p-7 border border-slate-800 space-y-6">
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white">Mantenimiento Industrial Castro</h3>
+                <p class="text-xs text-amber-400 font-medium">Taller en San Ignacio, Iztapalapa, CDMX</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-300">
+              <div>
+                <p class="text-xs text-slate-500 uppercase font-semibold">Dirección Oficial:</p>
+                <p class="font-medium text-white mt-0.5">
+                  Calle San Ignacio #38, Barrio San Ignacio, Alcaldía Iztapalapa, C.P. 09000, Ciudad de México, CDMX.
+                </p>
+                <p class="text-xs text-slate-400 mt-1">
+                  (Cerca de Calzada Ermita Iztapalapa, Eje 6 Sur Trabajadores Sociales y Central de Abasto).
+                </p>
+              </div>
+
+              <div>
+                <p class="text-xs text-slate-500 uppercase font-semibold">Teléfono de Contacto:</p>
+                <p class="font-bold text-white text-base mt-0.5">
+                  Llamadas / Oficina: <a href="tel:+525584236956" class="text-amber-400 hover:underline">(55) 8423-6956</a>
+                </p>
+                <p class="font-bold text-emerald-400 text-sm mt-1">
+                  WhatsApp Directo: <a href="https://wa.me/525584236956?text=Hola%20Mantenimiento%20Industrial%20Castro,%20solicito%20atenci%C3%B3n%20para%20un%20servicio%20en%20CDMX" target="_blank" rel="noopener noreferrer" class="hover:underline">+52 55 8423 6956</a>
+                </p>
+              </div>
+
+              <div>
+                <p class="text-xs text-slate-500 uppercase font-semibold">Correo Electrónico:</p>
+                <p class="text-sm text-white font-medium mt-0.5">
+                  <a href="mailto:mantenimientoindustrialcastro@gmail.com" class="text-amber-400 hover:underline">
+                    mantenimientoindustrialcastro@gmail.com
+                  </a>
+                </p>
+              </div>
+
+              <div>
+                <p class="text-xs text-slate-500 uppercase font-semibold">Horarios de Atención:</p>
+                <ul class="text-xs space-y-1 mt-1 text-slate-300">
+                  <li><strong>Lunes a Viernes:</strong> 8:30 AM - 6:30 PM</li>
+                  <li><strong>Sábados:</strong> 8:30 AM - 2:30 PM</li>
+                  <li class="text-amber-400 font-bold"><strong>Urgencias Mecánicas:</strong> Disponible vía telefónica</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a
+                href="https://wa.me/525584236956?text=Hola%20Mantenimiento%20Industrial%20Castro,%20tengo%20una%20consulta%20de%20mantenimiento%20industrial"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-md transition-colors"
+              >
+                Escribir al WhatsApp: 55 8423 6956
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa Geográfico de Bing / Google Maps -->
+          <div class="bg-slate-950 rounded-2xl p-6 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                Ubicación en San Ignacio 38, Iztapalapa
+              </h4>
+              <a
+                href="https://www.bing.com/maps?q=Calle+San+Ignacio+38+Iztapalapa+CDMX"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs text-amber-400 hover:underline font-semibold"
+              >
+                Abrir en Mapa ↗
+              </a>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Fácil acceso para entrega y recolección de piezas, motores y flechas industriales.
+            </p>
+            
+            <!-- Mapa interactivo centrado en San Ignacio 38, Iztapalapa -->
+            <div class="relative w-full h-64 rounded-xl overflow-hidden border border-slate-800 bg-slate-900">
+              <iframe
+                title="Ubicación Mantenimiento Industrial Castro en San Ignacio 38 Iztapalapa"
+                src="https://maps.google.com/maps?q=19.363838,-99.099373+(Mantenimiento+Industrial+Castro)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Manejo accesible de envío del formulario
+  const form = document.getElementById("industrial-contact-form") as HTMLFormElement | null;
+  const feedback = document.getElementById("form-feedback");
+  const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement | null;
+
+  if (form && feedback && submitBtn) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.classList.add("opacity-75", "cursor-not-allowed");
+      submitBtn.innerHTML = `
+        <svg class="animate-spin w-5 h-5 text-slate-950 inline mr-2" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Enviando Solicitud...
+      `;
+
+      setTimeout(() => {
+        feedback.classList.remove("hidden");
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.classList.remove("opacity-75", "cursor-not-allowed");
+        submitBtn.innerHTML = `
+          <span>Solicitud Enviada con Éxito</span>
+          <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+          </svg>
+        `;
+        feedback.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 1000);
+    });
+  }
+</script>
